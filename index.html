@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles1.css">
+<link rel="stylesheet" type="text/css" href="css/refineslide.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+
+<!--[if lt IE 9]>
+     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/styleIE8.css">
+<![endif]-->
+<title>Makenzies Portfolio Site</title>
+</head>
+
+<body>
+<header>
+<img class="logo" src="img/Logo.png" alt="logo">
+
+</header>
+
+<section class="cursor">
+</section>
+<nav>
+	<ul>
+        <li class="liLinks"><a class="nav" id="HOME" href="index.html">Home</a></li>
+        <li class="liLinks"><a class="nav" id="Krazy" href="burger.html">Burger Builder</a></li>
+    	<li class="liLinks"><a class="nav" id="Bridle" href="bridle.html">Bridle Shop</a></li>
+		<li class="liLinks"><a class="nav" id="Big" href="bestHorseCarriage.html">Best Horse Carriage</a></li>
+		<li class="liLinks"><a class="nav" id="CONTACTME" href="ContactMe.php">Contact Me</a></li>
+	</ul>
+</nav>
+<section class="IntroTextWelcome">
+<div class="section-2 group">
+<ul id="images" class="rs-slider">
+	<li class="group">
+    	<a href="http://makenzieambrosedesigns.com/InteractiveDevelopmentProject/buns.html">
+        	<img src="img/burger.JPG"/><!---slide is now clickable -->
+        </a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Burger Builder</h3>
+        <p>Click on the picture above to see this website</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="http://makenzieambrosedesigns.com/PHPfinal/intro.php">
+    		<img src="img/bridle.JPG"/><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Bridle Shop</h3>
+        <p>Click on the image above to see this website</p>
+     </div>
+    </li>
+     <li class="group">
+    	<a href="img/Resume.pdf">
+            <img src="img/resume.JPG"/><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Resume</h3>
+        <p>Click here to view my Reume</p>
+     </div>
+    </li>
+
+</ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.refineslide.min.js"></script>
+ <script>
+        (function ($, window, document) {
+            var $navA = $('#nav').find('a');
+            var $pageLi = $('#pages').find('li');
+
+            function capitalise(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1);
+            }
+
+            function showPage(hash) {
+                var pageName = hash.replace('#', '');
+                var pre = '';
+
+                $navA.removeClass('active');
+                $navA.filter('[href='+ hash +']').addClass('active');
+
+                $pageLi.removeClass('active');
+                $pageLi.filter('#_' + pageName).addClass('active');
+
+                if (pageName) {
+                    pre = capitalise(pageName) + ' → ';
+                }
+
+                document.title = pre + 'RefineSlide';
+            }
+
+            $(window).on('hashchange', function () {
+                showPage(location.hash);
+            });
+
+            $(function () {
+                $('#images').refineSlide();
+
+                if (location.hash) { // If a page hash is navigated to directly
+                    showPage(location.hash);
+                }
+            });
+        })(window.jQuery, window, document);
+    </script>
+
+<p>My name is Makenzie Ambrose and I develop great experiences for the internet. I’ve had about 5 years of experience under my belt designing and developing websites. My skills include HTML and CSS with a lot of interest in JavaScript.</p>
+<br>
+ <p>I decided to pursue this field because it is ever-changing. As a Front-End Developer, I have to keep track of the latest updates in the field and code websites to work on a wide variety of devices. I enjoy working on complex issues and am very well organized when working on a project, and in this field that happens a lot because each client's needs are different. I love how that keeps me on my toes.</p>
+ <br>
+ <p>I hope you enjoy the work I have showcased here on my website. Please contact me with any questions.</p>
+</section>
+
+</body>
+</html>

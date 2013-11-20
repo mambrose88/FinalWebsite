@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../cubeTransitionDemo/css/refineslide.css"/>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="section-2 group">
+<ul id="images" class="rs-slider">
+	<li class="group">
+    	<a href="https://www.google.com">
+        	<img src="../GMA&GPA/img/2.jpg" width="300" height="200" alt="gma"/><!---slide is now clickable -->
+        </a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="#">
+    		<img src="../GMA&GPA/img/8.jpg" width="300" height="200" alt="gma"/><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="#">
+            <img src="../GMA&GPA/img/9.jpg" width="300" height="200" alt="gma"/><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="#">
+    		<img src="../GMA&GPA/img/13.jpg" width="300" height="200" alt="gma"/> <!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+</ul>
+</div>
+<script src="../cubeTransitionDemo/js/jquery.min.js"></script>
+<script src="../cubeTransitionDemo/js/jquery.refineslide.min.js"></script>
+ <script>
+        (function ($, window, document) {
+            var $navA = $('#nav').find('a');
+            var $pageLi = $('#pages').find('li');
+
+            function capitalise(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1);
+            }
+
+            function showPage(hash) {
+                var pageName = hash.replace('#', '');
+                var pre = '';
+
+                $navA.removeClass('active');
+                $navA.filter('[href='+ hash +']').addClass('active');
+
+                $pageLi.removeClass('active');
+                $pageLi.filter('#_' + pageName).addClass('active');
+
+                if (pageName) {
+                    pre = capitalise(pageName) + ' → ';
+                }
+
+                document.title = pre + 'RefineSlide';
+            }
+
+            $(window).on('hashchange', function () {
+                showPage(location.hash);
+            });
+
+            $(function () {
+                $('#images').refineSlide();
+
+                if (location.hash) { // If a page hash is navigated to directly
+                    showPage(location.hash);
+                }
+
+                SyntaxHighlighter.autoloader(
+                    'js   assets/js/shBrushJScript.min.js',
+                    'css  assets/js/shBrushCss.min.js',
+                    'html assets/js/shBrushXml.min.js'
+                );
+                SyntaxHighlighter.all(); // Call syntax highlighting for <pre> tags
+            });
+        })(window.jQuery, window, document);
+    </script>
+
+</body>
+
+
+</html>

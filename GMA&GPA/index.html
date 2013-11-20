@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/refineslide.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/script.js"></script>
+<title>Best Horse Drawn Carriage Service</title>
+</head>
+<body>
+	<header>    
+    	<img src="img/HeaderBanner.png" alt="header"/> <div class="headername">Best Horse Drawn Carriage Service<br />
+        												Jim and Sandy Best</div>		
+    		<ul>
+                  <li class="nav"><a href="index.html">Home</a></li>
+                  <li class="nav"><a href="AboutUs.html">About Us</a></li>
+                  <li class="nav"><a href="pictures.html">Pictures</a></li>
+                  <li class="nav"><a href="ContactUs.php">Contact Us</a></li>
+              	</ul>
+
+    </header>
+  <div class="section-2 group">
+<ul id="images" class="rs-slider">
+	<li class="group">
+    	<a href="https://www.google.com">
+        	<img src="img-working/130527950007.gif" alt="gma"><!---slide is now clickable -->
+        </a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="#">
+    		<img src="img-working/130527950002.gif" alt="prom"><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="#">
+            <img src="img-working/130929_0013.gif" alt="trey"><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+    <li class="group">
+    	<a href="#">
+    		 <img src="img-working/130811950002.gif" alt="parade"><!---slide is now clickable -->
+    	</a>
+     <div class="rs-caption rs-bottom">
+     	<h3>Caption Area</h3>
+        <p>blah blah blah blah</p>
+     </div>
+    </li>
+</ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.refineslide.min.js"></script>
+ <script>
+        (function ($, window, document) {
+            var $navA = $('#nav').find('a');
+            var $pageLi = $('#pages').find('li');
+
+            function capitalise(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1);
+            }
+
+            function showPage(hash) {
+                var pageName = hash.replace('#', '');
+                var pre = '';
+
+                $navA.removeClass('active');
+                $navA.filter('[href='+ hash +']').addClass('active');
+
+                $pageLi.removeClass('active');
+                $pageLi.filter('#_' + pageName).addClass('active');
+
+                if (pageName) {
+                    pre = capitalise(pageName) + ' → ';
+                }
+
+                document.title = pre + 'RefineSlide';
+            }
+
+            $(window).on('hashchange', function () {
+                showPage(location.hash);
+            });
+
+            $(function () {
+                $('#images').refineSlide();
+
+                if (location.hash) { // If a page hash is navigated to directly
+                    showPage(location.hash);
+                }
+
+            });
+        })(window.jQuery, window, document);
+    </script>
+
+ 
+</body>
+</html>

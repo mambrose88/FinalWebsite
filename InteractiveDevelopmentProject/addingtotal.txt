@@ -1,0 +1,11 @@
+before update cart function closes,
+make variable that stores first price
+	(var price1= parseFloat readcookie(____Price)
+	""
+	""
+
+make variable to store total:
+	var total=price 1+price"+""
+
+document.getElementbyId(cartTotal).innerHTML ="$"+ (Math.round(total*100)/100);
+	

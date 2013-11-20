@@ -1,0 +1,74 @@
+@import url('../fonts/alex/stylesheet.css');
+@import url('../fonts/king/stylesheet.css');
+/*/////////////HTML Css////////////////*/
+body{
+    font-family: 'KingthingsExeterRegular';
+	background-color:#7b72d8;
+}
+
+.headername{
+	width: 27%;
+	padding-top: 4%;
+}
+
+header{
+	background-color: #ff0d00;
+	font-size: 27px;
+	color:white;
+	padding-bottom: 1%;
+}
+
+div{
+	float: left;
+	margin-left: 1.5%;
+}
+
+img{
+	float:left;
+}
+
+.gma{
+	float:left;
+	margin-right:2%;
+	width:32%;
+	height:32%;
+}
+
+.boys{
+	margin:.5%;
+	float:right;
+	width:32%;
+	height:32%;
+}
+section{
+	margin-top: 3.5%;	
+	background-color:white;
+	width: 75%;
+	font-size:23px;
+	margin-left: 5%;
+	padding: 2%;
+	line-height: 105.5%;
+}
+/*///////////Nav CSS/////////////*/
+ul {
+	padding-top:10%;
+	margin-left: 40%;
+	font-size:18px;
+    font-family: 'KingthingsExeterRegular';
+}
+
+.nav{
+	display:inline-block;
+	margin-left: 5%;
+	margin-right: 4%;
+	padding:.5%;
+}
+
+a:hover{
+	color:white;
+}
+
+a{
+	text-decoration:none;
+	font-size:25px;
+}

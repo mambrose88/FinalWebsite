@@ -1,0 +1,153 @@
+/* CSS Document */
+@import url("../Fonts/HamburgerHeaven/stylesheet.css");
+@import url("../Fonts/kaushan/stylesheet.css");
+@import url("../Fonts/YesterdaysMeal/stylesheet.css");
+@import url("../Fonts/GoodDog/stylesheet.css");
+/*////////////////HTML CSS/////////////////*/
+html{
+	background-color: #ffe273;
+	margin:0 auto;
+}
+
+h1{
+    font-family: 'YesterdaysmealRegular';
+	font-size:30px;
+}
+
+h4{
+    font-family: 'KaushanScriptRegular';
+}
+
+
+.background_selection{
+	background-color:#ff7a73;
+	margin-bottom: 15%;
+	padding-bottom: 12%;
+	border-radius:6px;
+	width:100%;
+    font-family: 'GoodDogRegular';
+	font-size:25px;
+	text-align:center;
+	padding-top:.5%;
+	color:#3a2e85;
+}
+
+.list1{
+	font-family: 'HamburgerHeavenRegular';	
+	position:absolute;
+	display:block;
+	font-size:22px;
+	float:left;
+	margin-left:14%;
+	margin-top:3%;
+}
+
+.list2{
+	font-family: 'HamburgerHeavenRegular';
+	font-size:22px;
+	position:absolute;
+	display:block;
+	float:left;
+	margin-left:36%;
+	margin-top:3%;
+}
+
+.list3{
+	font-family: 'HamburgerHeavenRegular';
+	font-size:22px;
+	position:absolute;
+	display:block;
+	float:left;
+	margin-left:56%;
+	margin-top:3%;
+}
+
+h1{
+	margin-bottom:1%;
+	margin-top:1%;
+	color:#a60800;
+}
+
+h4{
+	padding-bottom:2%;
+	color:#a60800;
+}
+/*//////////////////END HTML CSS////////////////////////*/
+
+/*/////////////////Start Background Selection Css///////*/
+.wheat{font-size:24px;
+	text-decoration:none;}
+.wheat:hover{color:white;}	
+.white{font-size:24px;
+	text-decoration:none;}
+.white:hover{color:white;}	
+.rye{font-size:24px;
+	text-decoration:none;}
+.rye:hover{color:white;}	
+/*/////////////////end Background Selection Css///////*/
+
+/*//////////////////Start Image CSS////////////////////////*/
+.LOGO{
+	float:left;
+}
+
+.bunsImage{width:62%;}
+.bunsImage2{width:62%;}
+.bunsImage3{width:62%;}
+
+/*////////////////////End Image CSS///////////////////////*/
+
+/*/////////////////Navigation CSS///////////////////////*/
+nav{
+    font-family: 'GoodDogRegular';
+	font-size:24px;
+	padding:.5%;
+	background-color:#160773;
+	margin-top:7%;
+}
+
+.navigation1{
+	padding-left:10%;
+	padding-right:10%;
+	text-decoration:none;
+	background-color:#66e275;
+	color:#ff0d00;
+}
+
+.navigation2{
+	padding-left:10%;
+	padding-right:10%;
+	text-decoration:none;
+	color:#00c618;
+}
+
+.navigation3{
+	padding-left:10%;
+	padding-right:10%;
+	text-decoration:none;
+	color:#00c618;
+}
+/*///////////////////////End Navigation CSS//////////////////////*/
+
+/*/////////////////////////Cart CSS////////////////////*/
+ul{
+	position:absolute;
+	display:block;
+	margin-left:2%;
+}
+
+li{list-style:none;}
+.buns{margin-left:5%; font-family: 'HamburgerHeavenRegular'; font-size:18px;
+}
+
+.drinks{margin-left:16%; font-family:'HamburgerHeavenRegular'; font-size:18px;
+}
+
+.sides{margin-left:27%;font-family: 'HamburgerHeavenRegular'; font-size:15px;
+}
+
+.TOTAL{margin-top:40%;	font-family: 'HamburgerHeavenRegular'; font-size:18px;
+ width:100%;}
+
+.cart{margin-left:60%;}
+/*//////////////////END cart CSS////////////////////////*/
